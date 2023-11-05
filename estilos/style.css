@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (width: 280px) and (height:653px) {
+    div.banner {
+        display: block;
+        font-size: 0.78em;
+    }
+
+    div.plan > div.plan-change {
+        font-size: 0.8em;
+    }
+
+    div.plan > div.plan-change > img {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@media screen and (width: 320px) and (height:568px) {
+    div#box > div.banner-photo {
+        background-size: cover;
+        height: 170px;
+    }
+
+    div.banner {
+        display: block;
+        font-size: 0.89em;
+    }
+
+    div.plan > div.plan-change {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (width: 320px) and (height:480px) {
+    div#box > div.banner-photo {
+        background-size: 100%;
+        height: 130px;
+    }
+
+    div.banner {
+        display: block;
+        font-size: 0.88em;
+    }
+
+    div.plan-change {
+        font-size: 0.92em;
+    }
+
+    div.body > div.plan {
+        height: 70px;
+    }
+
+    div.plan > div.plan-change > img {
+        width: 45px;
+        height: 45px;
+    }
+
+    div.plan > div.plan-change > h2 {
+        line-height: 20px;
+    }
+
+    div#box > div.body > a.pag {
+        height: 45px;
+        line-height: 43px;
+    }
+}
+
+body {
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #DFE8FF;
+    background-position-x: -520px;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+div#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div#box {
+    background: #ffffff;
+    box-shadow: 2px 3px 10px #0000000e;
+    width: 90%;
+    border-radius: 20px;
+}
+
+div.banner-photo {
+    background: url('../images/illustration-hero.svg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+div.body {
+    margin: auto;
+    width: 85%;
+}
+
+div.banner {
+    width: 100%;
+    margin: auto;
+}
+
+div.banner > h1 {
+    font-weight: 650;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+div.banner > p {
+    width: 100%;
+    font-size: 0.96em;
+    text-align: center;
+    font-weight: 600;
+    color: #6C6C6C;
+}
+
+div.plan {
+    background-color: #F8F9FF;
+    box-shadow: 1px 3px 4px #0000000a;
+    border-radius: 10px;
+    height: 80px;
+}
+
+div.plan-change {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    padding: 10px;
+}
+
+div.plan-change > h2 {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: start;
+    margin-left:20px;
+    margin-top: 2px;
+    line-height: 24px;
+    color: #202D54;
+}
+
+div.plan-change > h2 > span.price {
+    font-weight: 500;
+    color: #9799BD;
+}
+
+div.plan-change > img {
+    width: 50px;
+    height: 50px;
+}
+
+div.plan-change > a {
+    margin-left: auto;
+    margin-top: 15px;
+    display: block;
+    color: #3729DB;
+    font-weight: 700;
+}
+
+div.plan-change > a:hover {
+    color: #8079D5;
+    text-decoration: none;
+}
+
+div.pag {
+    background-color: #3729DB;
+    height: 40px;
+    margin-top: 20px;
+}
+
+a.pag {
+    background-color: #3729DB;
+    box-shadow: 2px 3px 10px #00000036;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 46px;
+    margin-top: 20px;
+    color: #FFFFF2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.pag:hover {
+    background-color: #766CF1;
+}
+
+a.can {
+    text-align: center;
+    display: block;
+    margin: 20px auto 20px auto;
+    font-weight: 700;
+    color: #757CA9;
+    text-decoration: none;
+}
